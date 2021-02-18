@@ -1,0 +1,13 @@
+Follow this tutorial to compile C/C++ files to WebAssembly
+https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm
+
+You will need to install emscripten (as the tutorial above explains)
+https://emscripten.org/docs/getting_started/downloads.html
+
+Once you have followed both tutorials you will be able to compile to wasm with the following command:
+emcc hello.c -s WASM=1 -o hello.html
+
+This will generate three files: wasm, js and html
+By running a local server and oppening the generated html file the program will run in your browser with a premade html to show the console
+
+To avoid using the premade html so you can implement this inside your own html please follow further instructions in the first link.
